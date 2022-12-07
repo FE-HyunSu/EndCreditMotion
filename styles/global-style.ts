@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
-import { reset } from 'styled-reset';
+import { createGlobalStyle } from "styled-components";
+import { reset } from "styled-reset";
 
 export const GlobalStyle = createGlobalStyle`
     ${reset}
@@ -17,6 +17,13 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 10px;
         -ms-overflow-style: none;
         scrollbar-width: none;
+        height:100%;
+    }
+    body{
+        & > div, & main {
+            height:100%;
+        }
+        height:100%;
     }
     button {
         background: none;
