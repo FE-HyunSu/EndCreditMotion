@@ -7,7 +7,7 @@ const Intro = ({ stepNext }: any) => {
     introRef.current?.classList.add("motion-on");
     let introTimeout = setTimeout(() => {
       stepNext();
-      clearInterval(introTimeout);
+      clearTimeout(introTimeout);
     }, 5000);
   }, []);
   return (
