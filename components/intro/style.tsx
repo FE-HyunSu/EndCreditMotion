@@ -1,84 +1,32 @@
 import styled, { keyframes } from "styled-components";
 
 const motionAppear = keyframes`
-0% {
-  transform: scale(1.5, 1.5);
-  filter: blur(1rem);
-  -webkit-filter: blur(1rem);
-  opacity: 0;
-}
-40% {
-  transform: scale(1.2, 1.2);
-  filter: blur(1rem);
-  -webkit-filter: blur(1rem);
-  opacity: 1;
-}
-100% {
-  transform: scale(1, 1);
-  filter: blur(0);
-  -webkit-filter: blur(0);
-  opacity: 1;
-}
+  0% {transform: scale(1.5, 1.5); filter: blur(1rem); -webkit-filter: blur(1rem); opacity: 0;}
+  40% { transform: scale(1.2, 1.2); filter: blur(1rem); -webkit-filter: blur(1rem); opacity: 1;}
+  100% {transform: scale(1, 1); filter: blur(0); -webkit-filter: blur(0); opacity: 1;}
 `;
 
 const motionMove1 = keyframes`
-  0% {
-    margin: 5rem 0 0 5rem;
-  }
-  10% {
-    margin: 5rem 0 0 3.5rem;
-  }
-  50% {
-    margin: 5rem 0 0 0;
-  }
-  60% {
-    margin: 5rem 0 0 0;
-  }
-  70% {
-    margin: 3.5rem 0 0 0;
-  }
-  100% {
-    margin: 0;
-  }
+  0% {margin: 5rem 0 0 5rem;}
+  10% {margin: 5rem 0 0 3.5rem;}
+  50% {margin: 5rem 0 0 0;}
+  60% {margin: 5rem 0 0 0;}
+  70% {margin: 3.5rem 0 0 0;}
+  100% {margin: 0;}
 `;
 
 const motionMove2 = keyframes`
-  0% {
-    margin: 5rem 0 0 0;
-  }
-  50% {
-    margin: 5rem 0 0 0;
-  }
-  60% {
-    margin: 5rem 0 0 0;
-  }
-  70% {
-    margin: 3.5rem 0 0 0;
-  }
-  100% {
-    margin: 0;
-  }
+  0% {margin: 5rem 0 0 0;}
+  50% {margin: 5rem 0 0 0;}
+  60% {margin: 5rem 0 0 0;}
+  70% {margin: 3.5rem 0 0 0;}
+  100% {margin: 0;}
 `;
 
 const motionAppearEnd = keyframes`
-  0% {
-    transform: scale(1, 1);
-    filter: blur(0);
-    -webkit-filter: blur(0);
-    opacity: 1;
-  }
-  40% {
-    transform: scale(1.2, 1.2);
-    filter: blur(1rem);
-    -webkit-filter: blur(1rem);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.5, 1.5);
-    filter: blur(1rem);
-    -webkit-filter: blur(1rem);
-    opacity: 0;
-  }
+  0% {transform: scale(1, 1); filter: blur(0); -webkit-filter: blur(0); opacity: 1;}
+  40% {transform: scale(1.2, 1.2); filter: blur(1rem); -webkit-filter: blur(1rem); opacity: 1;}
+  100% {transform: scale(1.5, 1.5); filter: blur(1rem); -webkit-filter: blur(1rem); opacity: 0;}
 `;
 
 export const IntroBox = styled.section`
@@ -88,6 +36,7 @@ export const IntroBox = styled.section`
   width: 100%;
   height: 100%;
   background-color: #ffeeee;
+  transform: scale(0.6);
 
   .slogan-box {
     position: absolute;
@@ -96,7 +45,6 @@ export const IntroBox = styled.section`
     width: 100%;
     height: 100%;
     background-color: #fff;
-    // opacity: 0;
     opacity: 1;
     z-index: 2;
     strong {

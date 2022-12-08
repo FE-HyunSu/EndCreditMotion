@@ -1,10 +1,19 @@
+import React, { useRef, useEffect } from "react";
 import { IntroBox } from "./style";
 
-const Intro = () => {
+const Intro = ({ stepNext }: any) => {
+  const introRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    introRef.current?.classList.add("motion-on");
+    let introTimeout = setTimeout(() => {
+      stepNext();
+      clearInterval(introTimeout);
+    }, 5000);
+  }, []);
   return (
     <>
       <IntroBox>
-        <div className="slogan-box motion-on">
+        <div className="slogan-box" ref={introRef}>
           <strong>
             <span className="slogan-01">야</span>
             <span className="slogan-02">너두</span>
