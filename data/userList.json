@@ -1,0 +1,214 @@
+[
+  {
+    "groupName": "야나두본부 본부장님",
+    "captain": [
+      {
+        "memberType": "leader",
+        "memberName": "Lucas",
+        "comment": "ㄷㅏ ㅌㅐㅇㅜㅓㅆㅇㅓㅇㅛ ㅈㅏㄹ ㅌㅏㅇㅗㄹㅡㄱㅣㄹ!"
+      }
+    ]
+  },
+  {
+    "groupName": "야나두본부 개발팀",
+    "captain": [
+      {
+        "memberName": "남궁영환",
+        "comment": "항상 감사하십시오"
+      }
+    ],
+    "memberList": [
+      {
+        "memberName": "김우제",
+        "comment": "하쿠나 마타타"
+      },
+      {
+        "memberName": "김민정",
+        "comment": "2022년도 가보자고&starf;"
+      },
+      {
+        "memberName": "고은혜",
+        "comment": "seize the day!"
+      },
+      {
+        "memberName": "토로아빠",
+        "comment": "묻고 따블로 가!"
+      },
+      {
+        "memberName": "온우아빠",
+        "comment": "I'am yanadoo family"
+      },
+      {
+        "memberName": "은우파파",
+        "comment": "It's time to go to bed"
+      },
+      {
+        "memberName": "김진영",
+        "comment": "It happens"
+      },
+      {
+        "memberName": "류원성",
+        "comment": "서버야~ 죽지마!!!"
+      },
+      {
+        "memberName": "깡구",
+        "comment": "깡구가 무슨뜻인지 아세요?"
+      },
+      {
+        "memberName": "안재형",
+        "comment": "무야호~!@!"
+      },
+      {
+        "memberName": "슬",
+        "comment": "실수를 해서 스텝이 엉키면, 그게 바로 탱고~"
+      },
+      {
+        "memberName": "이시우"
+      },
+      {
+        "memberName": "NPC1",
+        "comment": "티끌은 모아도 티끌"
+      },
+      {
+        "memberName": "와와",
+        "comment": "초밥 먹고싶다"
+      },
+      {
+        "memberName": "김주아",
+        "comment": "아~니~~~ 제 말 좀 들어보세요~~~~~~~"
+      },
+      {
+        "memberName": "김현수",
+        "comment": "항상 감사합니다"
+      },
+      {
+        "memberName": "날다람쥐",
+        "comment": "사람을 미치게 만드는 방법은 두 가지가..쩝.."
+      },
+      {
+        "memberName": "이지희",
+        "comment": "걸.걸.걸 더 사랑할걸. 더 즐길걸. 더 참을걸."
+      },
+      {
+        "memberName": "김희수",
+        "comment": "감사합니다 홧팅"
+      },
+      {
+        "memberName": "정효경",
+        "comment": "계단말고 엘리베이터타고 출근하세요."
+      }
+    ]
+  },
+  {
+    "groupName": "야나두본부 디자인팀",
+    "captain": [
+      {
+        "memberName": "너부리",
+        "comment": "나만의 길을 가련다."
+      }
+    ],
+    "memberList": [
+      {
+        "memberName": "이성찬",
+        "comment": "쿠쿠루삥뽕"
+      },
+      {
+        "memberName": "킹혜원",
+        "comment": "안되면 되는 거 해라~~!"
+      },
+      {
+        "memberName": "박혜원",
+        "comment": "(&#xE51;&#x2C3;&#x335;&#x1D17;&#x2C2;&#x335;)&#x648;"
+      },
+      {
+        "memberName": "보리보리",
+        "comment": "2021년 황금졸려상"
+      },
+      {
+        "memberName": "행복한쿼카",
+        "comment": "야나두3.0_최종_수정_수정2차_진짜최종.png"
+      },
+      {
+        "memberName": "부순이",
+        "comment": "말하는 감자.."
+      }
+    ]
+  },
+  {
+    "groupName": "야나두본부 APP팀",
+    "captain": [
+      {
+        "memberName": "이창주",
+        "comment": "나의 스텝에는 자비심이 없다."
+      }
+    ],
+    "memberList": [
+      {
+        "memberName": "심칸쵸",
+        "comment": "여러분, 사..사..사는 동안 계속 버시오"
+      },
+      {
+        "memberName": "최태원",
+        "comment": "미안해 래리.. 사실 난 경찰이야.."
+      },
+      {
+        "memberName": "유건우",
+        "comment": "하나 둘 셋 화이팅"
+      },
+      {
+        "memberName": "오지연",
+        "comment": "들숨의 재력을 날숨에 건강을"
+      }
+    ]
+  },
+  {
+    "groupName": "전략기획팀",
+    "captain": [
+      {
+        "memberName": "홍성주",
+        "comment": "맛있는거 사드릴게요~&#x266A;(&#xB4;&#x25BD;&#xFF40;)"
+      }
+    ],
+    "memberList": [
+      {
+        "memberName": "나나",
+        "comment": "(o&#x309C;&#x25BD;&#x309C;)o&#x2606;모두들 화이팅~"
+      },
+      {
+        "memberName": "JG",
+        "comment": "이슈로 등록해 주세요 &#x295;&#xFFEB;&#x1D25;&#xFFE9;&#x294;"
+      },
+      {
+        "memberName": "Iana",
+        "comment": "&#x669;( &#x141B; )&#x648; 이거 저도 넣어도 되는건가요....??"
+      },
+      {
+        "memberName": "김지선",
+        "comment": "잘 지내고 계신거죠!!!!!!!"
+      }
+    ]
+  },
+  {
+    "groupName": "야나두본부 CRM팀",
+    "captain": [
+      {
+        "memberName": "블리블리",
+        "comment": "어서와~ 저번에도 왔었지?"
+      }
+    ],
+    "memberList": [
+      {
+        "memberName": "찬찬",
+        "comment": "다들 적게 일하고 많이 버세요 :)"
+      },
+      {
+        "memberName": "상태상태",
+        "comment": "모두모두 화이팅!!!"
+      },
+      {
+        "memberName": "씸씨미",
+        "comment": "모두 고생 많으셨습니다! 파이팅~~"
+      }
+    ]
+  }
+]

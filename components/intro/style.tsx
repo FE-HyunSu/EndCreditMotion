@@ -35,8 +35,6 @@ export const IntroBox = styled.section`
   align-items: center;
   width: 100%;
   height: 100%;
-  transform: scale(0.6);
-
   .slogan-box {
     position: absolute;
     top: 0;
