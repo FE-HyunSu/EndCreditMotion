@@ -58,4 +58,22 @@ export const MainBox = styled.section`
     transform: rotate(-10deg);
     opacity: 0.3;
   }
+  .drop-star {
+    position: absolute;
+    top: -999rem;
+    left: -999rem;
+    width: 10rem;
+    height: 8rem;
+    background: url(/images/img_drop_star.png) no-repeat 50% 50% / 100% auto;
+    opacity: 0;
+  }
+  .drop-star2 {
+    position: absolute;
+    top: -999rem;
+    left: -999rem;
+    width: 14rem;
+    height: 10rem;
+    background: url(/images/img_drop_star.png) no-repeat 50% 50% / 100% auto;
+    opacity: 0;
+  }
 `;
