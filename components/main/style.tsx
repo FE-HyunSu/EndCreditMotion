@@ -5,6 +5,12 @@ const motionStar = keyframes`
   100% {background-position-x: 100vw;}
 `;
 
+const dropMotion = keyframes`
+  0% {opacity:0; transform: translate(0rem, 0rem);}
+  50% {opacity:1;}
+  100% {opacity:0; transform: translate(22rem, 8rem);}
+`;
+
 export const MainBox = styled.section`
   position: relative;
   width: 100%;
@@ -66,6 +72,9 @@ export const MainBox = styled.section`
     height: 8rem;
     background: url(/images/img_drop_star.png) no-repeat 50% 50% / 100% auto;
     opacity: 0;
+    &.active {
+      animation: ${dropMotion} 1.5s forwards;
+    }
   }
   .drop-star2 {
     position: absolute;
@@ -75,5 +84,8 @@ export const MainBox = styled.section`
     height: 10rem;
     background: url(/images/img_drop_star.png) no-repeat 50% 50% / 100% auto;
     opacity: 0;
+    &.active {
+      animation: ${dropMotion} 1.5s forwards;
+    }
   }
 `;
