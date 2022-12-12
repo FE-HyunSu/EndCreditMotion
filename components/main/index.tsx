@@ -43,17 +43,14 @@ const Main = ({ stepNext }: any) => {
         return Math.random() - Math.random();
       })
     );
-    // if (bubbleGroup.current) bubbleGroup.current.innerHTML = ``;
-    // bubbleItemImg.forEach((item, idx) => {
-    //   if (bubbleGroup.current) {
-    //     bubbleGroup.current.innerHTML +=
-    //       `<button type="button" class="bubble-item-0` +
-    //       (idx + 1) +
-    //       `" style="background-image:url(` +
-    //       item +
-    //       `);" onclick="effectActive(this);"></button>`;
-    //   }
-    // });
+  };
+
+  const bubbleItemEffect = (e: any) => {
+    let bubbleSetTime: any = setTimeout;
+    e.target.classList.add("active");
+    bubbleSetTime = setTimeout(() => {
+      e.target.classList.remove("active");
+    }, 1000);
   };
 
   useEffect(() => {
@@ -79,7 +76,8 @@ const Main = ({ stepNext }: any) => {
                   <button
                     type="button"
                     className={`bubble-item-0` + (idx + 1)}
-                    style={{ background: `url(${item})` }}
+                    style={{ backgroundImage: `url(${item})` }}
+                    onClick={(e) => bubbleItemEffect(e)}
                   >
                     item{idx + 1}
                   </button>

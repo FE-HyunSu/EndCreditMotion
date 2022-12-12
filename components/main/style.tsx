@@ -30,7 +30,7 @@ export const MainBox = styled.section`
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 1);
-    transition: 1s;
+    transition: 1.8s;
     opacity: 1;
     z-index: 2;
   }
@@ -151,6 +151,38 @@ export const MainBox = styled.section`
         height: 5rem;
         margin-top: 26rem;
         animation: ${motionRotate} 7s linear infinite;
+      }
+      &.active {
+        &:before {
+          content: "";
+          position: absolute;
+          top: -1px;
+          right: 0;
+          bottom: 0;
+          left: -1px;
+          width: 100%;
+          height: 100%;
+          margin: auto;
+          border: 1px solid #fff;
+          border-radius: 100%;
+          animation: bubbleEffect02 1s forwards;
+          z-index: -1;
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          top: -1px;
+          right: 0;
+          bottom: 0;
+          left: -1px;
+          width: 100%;
+          height: 100%;
+          margin: auto;
+          border: 1px solid #fff;
+          border-radius: 100%;
+          animation: bubbleEffect01 1s 0.2s forwards;
+          z-index: -1;
+        }
       }
     }
   }
