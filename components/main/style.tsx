@@ -11,6 +11,11 @@ const dropMotion = keyframes`
   100% {opacity:0; transform: translate(22rem, 8rem);}
 `;
 
+const motionRotate = keyframes`
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+`;
+
 export const MainBox = styled.section`
   position: relative;
   width: 100%;
@@ -86,6 +91,65 @@ export const MainBox = styled.section`
     opacity: 0;
     &.active {
       animation: ${dropMotion} 1.5s forwards;
+    }
+  }
+  .bubble-group {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    transition: 0.5s;
+    z-index: 3;
+    button {
+      position: absolute;
+      top: 100%;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 100% auto;
+      opacity: 0.7;
+      &.bubble-item-01 {
+        right: 57%;
+        width: 6rem;
+        height: 6rem;
+        margin-top: 5rem;
+        animation: ${motionRotate} 2s linear infinite;
+      }
+      &.bubble-item-02 {
+        right: 80%;
+        width: 5rem;
+        height: 5rem;
+        margin-top: 13rem;
+        animation: ${motionRotate} 4s linear infinite;
+      }
+      &.bubble-item-03 {
+        right: 88%;
+        width: 7rem;
+        height: 7rem;
+        margin-top: 21rem;
+        animation: ${motionRotate} 3s linear infinite;
+      }
+      &.bubble-item-04 {
+        right: 65%;
+        width: 8rem;
+        height: 8rem;
+        margin-top: 14rem;
+        animation: ${motionRotate} 6s linear infinite;
+      }
+      &.bubble-item-05 {
+        right: 75%;
+        width: 7rem;
+        height: 7rem;
+        margin-top: 0rem;
+        animation: ${motionRotate} 3.5s linear infinite;
+      }
+      &.bubble-item-06 {
+        right: 60%;
+        width: 5rem;
+        height: 5rem;
+        margin-top: 26rem;
+        animation: ${motionRotate} 7s linear infinite;
+      }
     }
   }
 `;
