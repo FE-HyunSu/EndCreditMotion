@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { MainBox } from "./style";
 
 const Main = ({ stepNext }: any) => {
@@ -7,6 +7,7 @@ const Main = ({ stepNext }: any) => {
   const bubbleGroup = useRef<HTMLDivElement>(null);
   const itemStarRef = useRef<HTMLSpanElement>(null);
   const itemStarRef2 = useRef<HTMLSpanElement>(null);
+  const [bubbleitems, setBubbleitems] = useState<any>([]);
   const bubbleItemImg = [
     `./images/default_profile_image01.png`,
     `./images/default_profile_image02.png`,
@@ -37,20 +38,22 @@ const Main = ({ stepNext }: any) => {
   };
 
   const bubbleItemSet = () => {
-    bubbleItemImg.sort(() => {
-      return Math.random() - Math.random();
-    });
-    if (bubbleGroup.current) bubbleGroup.current.innerHTML = ``;
-    bubbleItemImg.forEach((item, idx) => {
-      if (bubbleGroup.current) {
-        bubbleGroup.current.innerHTML +=
-          `<button type="button" class="bubble-item-0` +
-          (idx + 1) +
-          `" style="background-image:url(` +
-          item +
-          `);" onclick="effectActive(this);"></button>`;
-      }
-    });
+    setBubbleitems(
+      bubbleItemImg.sort(() => {
+        return Math.random() - Math.random();
+      })
+    );
+    // if (bubbleGroup.current) bubbleGroup.current.innerHTML = ``;
+    // bubbleItemImg.forEach((item, idx) => {
+    //   if (bubbleGroup.current) {
+    //     bubbleGroup.current.innerHTML +=
+    //       `<button type="button" class="bubble-item-0` +
+    //       (idx + 1) +
+    //       `" style="background-image:url(` +
+    //       item +
+    //       `);" onclick="effectActive(this);"></button>`;
+    //   }
+    // });
   };
 
   useEffect(() => {
@@ -69,7 +72,20 @@ const Main = ({ stepNext }: any) => {
           <div className="yanadoo-list" ref={userListRef}></div>
           <span className="drop-star" ref={itemStarRef}></span>
           <span className="drop-star2" ref={itemStarRef2}></span>
-          <div className="bubble-group" ref={bubbleGroup}></div>
+          <div className="bubble-group" ref={bubbleGroup}>
+            {bubbleitems &&
+              bubbleitems.map((item: string, idx: number) => {
+                return (
+                  <button
+                    type="button"
+                    className={`bubble-item-0` + (idx + 1)}
+                    style={{ background: `url(${item})` }}
+                  >
+                    item{idx + 1}
+                  </button>
+                );
+              })}
+          </div>
         </div>
       </MainBox>
     </>

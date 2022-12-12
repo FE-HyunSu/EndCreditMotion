@@ -95,18 +95,20 @@ export const MainBox = styled.section`
   }
   .bubble-group {
     position: absolute;
-    top: 100%;
+    // top: 100%;
+    top: 50%;
     left: 0;
     width: 100%;
     transition: 0.5s;
     z-index: 3;
     button {
       position: absolute;
-      top: 100%;
+      // top: 100%;
       background-color: transparent;
       background-repeat: no-repeat;
       background-position: 0 0;
       background-size: 100% auto;
+      text-indent: -999rem;
       opacity: 0.7;
       &.bubble-item-01 {
         right: 57%;
