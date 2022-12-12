@@ -16,6 +16,33 @@ const motionRotate = keyframes`
   100% {transform: rotate(360deg);}
 `;
 
+const bubbleEffect01 = keyframes`
+  0% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5, 1.5);
+    opacity: 0;
+  }
+  `;
+const bubbleEffect02 = keyframes`
+  0% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.7, 1.7);
+    opacity: 0;
+  }
+  `;
+
 export const MainBox = styled.section`
   position: relative;
   width: 100%;
@@ -165,7 +192,7 @@ export const MainBox = styled.section`
           margin: auto;
           border: 1px solid #fff;
           border-radius: 100%;
-          animation: bubbleEffect02 1s forwards;
+          animation: ${bubbleEffect02} 1s forwards;
           z-index: -1;
         }
         &:after {
@@ -180,7 +207,7 @@ export const MainBox = styled.section`
           margin: auto;
           border: 1px solid #fff;
           border-radius: 100%;
-          animation: bubbleEffect01 1s 0.2s forwards;
+          animation: ${bubbleEffect01} 1s 0.2s forwards;
           z-index: -1;
         }
       }
