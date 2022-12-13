@@ -1,7 +1,7 @@
 ## 🧬 EasterEgg Motion EndCredits. v2
 
 ### 👻 개요
-- 기존 작업되었던 yndEasterEgg 페이지를 nextjs + typescript 프로젝트로 magration.
+- 기존 작업되었던 yndEasterEgg 페이지를 nextjs + typescript 프로젝트로 migration.
 
 ### 📽 내용
 - 그룹 순서 랜덤 노출.
