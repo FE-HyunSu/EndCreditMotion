@@ -13,7 +13,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta property="og:title" content="Endcredit Motion" />
           <meta property="og:description" content="Endcredit Motion" />
-          <meta property="og:image" content="" />
+          <meta property="og:image" content="/images/img_meta.png" />
           <link rel="icon" href="/favicon.ico" />
           <title>EndingCreditMotion</title>
         </Head>

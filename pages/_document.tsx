@@ -44,7 +44,7 @@ class MyDocument extends Document {
           />
           <link rel="shortcut icon" href="/favicon.ico" type="image/svg" />
           <meta property="og:title" content="Endcredit Motion" />
-          <meta property="og:image" content="" />
+          <meta property="og:image" content="/images/img_meta.png" />
           <meta property="og:description" content="Endcredit Motion" />
           <meta
             property="og:url"
