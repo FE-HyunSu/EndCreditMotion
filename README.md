@@ -3,6 +3,10 @@
 ### 👻 개요
 - 기존 작업되었던 yndEasterEgg 페이지를 nextjs + typescript 프로젝트로 migration.
 
+### 🛩 금번 프로젝트에서 경험 하고싶은 주요 기능.
+- 기존 프로젝트 migration.
+- React Nextjs Typescript 환경에서 Animation 제어.
+
 ### 📽 내용
 - 그룹 순서 랜덤 노출.
 - 팀 리더를 제외한 멤버 순서 랜덤 노출.
