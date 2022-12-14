@@ -11,8 +11,8 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
       <React.StrictMode>
         <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <meta property="og:title" content="Ending Credit" />
-          <meta property="og:description" content="Ending Credit" />
+          <meta property="og:title" content="Endcredit Motion" />
+          <meta property="og:description" content="Endcredit Motion" />
           <meta property="og:image" content="" />
           <link rel="icon" href="/favicon.ico" />
           <title>EndingCreditMotion</title>

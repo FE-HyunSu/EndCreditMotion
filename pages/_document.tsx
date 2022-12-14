@@ -43,12 +43,15 @@ class MyDocument extends Document {
             content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi"
           />
           <link rel="shortcut icon" href="/favicon.ico" type="image/svg" />
-          <meta property="og:title" content="" />
+          <meta property="og:title" content="Endcredit Motion" />
           <meta property="og:image" content="" />
-          <meta property="og:description" content="" />
-          <meta property="og:url" content="//" />
-          <meta name="description" content="" />
-          <meta name="keywords" content="" />
+          <meta property="og:description" content="Endcredit Motion" />
+          <meta
+            property="og:url"
+            content="https://endcreditmotion.netlify.app"
+          />
+          <meta name="description" content="Endcredit Motion" />
+          <meta name="keywords" content="Endcredit Motion" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap"
