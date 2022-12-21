@@ -95,8 +95,8 @@ const Main = ({ stepNext }: any) => {
     <>
       <MainBox ref={mainBoxRef}>
         <h1>야 너두 할수있어</h1>
-        <div className="yanadoo-box">
-          <div className="yanadoo-list" ref={userListRef}>
+        <div className="ynd-box">
+          <div className="ynd-list" ref={userListRef}>
             {userListData &&
               userListData
                 .sort(() => {

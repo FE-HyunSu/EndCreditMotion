@@ -40,7 +40,7 @@ export const MainBox = styled.section`
   background-color: #111;
   overflow: hidden;
   &.list-end {
-    .yanadoo-box {
+    .ynd-box {
       &:before {
         content: "";
         position: fixed;
@@ -218,7 +218,7 @@ export const MainBox = styled.section`
     }
   }
 
-  .yanadoo-list {
+  .ynd-list {
     position: absolute;
     top: 0;
     left: 0;
