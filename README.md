@@ -1,13 +1,13 @@
-## 🧬 EasterEgg Motion EndCredits. v2
+## 🧬 EasterEgg Motion EndCredits.v2
 
-### 👻 개요
+### 🧑‍💻 프로젝트 개요.
+
 - 기존 작업되었던 yndEasterEgg 페이지를 nextjs + typescript 프로젝트로 migration.
 
-### 🛩 금번 프로젝트에서 경험 하고싶은 주요 기능.
-- 기존 프로젝트 migration.
-- React Nextjs Typescript 환경에서 Animation 제어.
+### 👩‍🚀 구현 내용.
 
-### 📽 내용
+<img src="https://endcreditmotion.netlify.app/images/img_readme.png" width="600" alt="" />
+
 - 그룹 순서 랜덤 노출.
 - 팀 리더를 제외한 멤버 순서 랜덤 노출.
 - 아이콘 클릭 시 모션 효과 적용.
@@ -15,5 +15,10 @@
 - 캐릭터 클릭 시 모션 효과 적용.
 - 캐릭터 그룹의 이동속도 -> 우측 전체 리스트 길이에 유동적으로 속도 자동 조정 적용.
 
-### ⛓ Keyword
-- `React` `Nextjs` `typeScript` `animation`
+### 🏂 URL.
+
+- page : [https://endcreditmotion.netlify.app](https://endcreditmotion.netlify.app)
+
+### 🪬 Keyword.
+
+- `React` `Nextjs` `Typescript` `Recoil` `styled-components` `Animation`
