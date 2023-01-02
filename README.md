@@ -17,7 +17,7 @@
 
 ### 🏂 URL.
 
-- page : [https://endcreditmotion.netlify.app](https://endcreditmotion.netlify.app)
+- [https://endcreditmotion.netlify.app](https://endcreditmotion.netlify.app)
 
 ### 🪬 Keyword.
 
