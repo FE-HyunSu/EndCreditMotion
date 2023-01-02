@@ -1,4 +1,4 @@
-## 🧬 EasterEgg Motion EndCredits.v2
+## [![Netlify Status](https://api.netlify.com/api/v1/badges/5b685cda-d396-4868-ac53-b3e451efc5cf/deploy-status)](https://app.netlify.com/sites/endcreditmotion/deploys)<br/>🪂 EasterEgg Motion EndCredits.v2
 
 ### 🧑‍💻 프로젝트 개요.
 
