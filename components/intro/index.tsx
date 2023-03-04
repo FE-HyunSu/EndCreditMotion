@@ -9,6 +9,9 @@ const Intro = ({ stepNext }: any) => {
       stepNext();
       clearTimeout(introTimeout);
     }, 5000);
+    return () => {
+      clearTimeout(introTimeout);
+    };
   }, []);
   return (
     <>
