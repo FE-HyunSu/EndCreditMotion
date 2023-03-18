@@ -39,11 +39,12 @@ const Main = ({ stepNext }: any) => {
     }
   };
 
-  const bubbleItemEffect = (e: any) => {
+  const bubbleItemEffect = (e: React.MouseEvent<Element, MouseEvent>) => {
+    const target = e.target as Element;
     let bubbleSetTime: any = setTimeout;
-    e.target.classList.add("active");
+    target.classList.add("active");
     bubbleSetTime = setTimeout(() => {
-      e.target.classList.remove("active");
+      target.classList.remove("active");
     }, 1000);
   };
 
