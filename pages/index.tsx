@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useState } from "react";
 import Intro from "../components/intro";
 import Main from "../components/main";
 

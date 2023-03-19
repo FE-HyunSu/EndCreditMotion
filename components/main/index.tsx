@@ -19,10 +19,10 @@ const Main = ({ stepNext }: any) => {
     `./images/default_profile_image06.png`,
   ];
 
-  const randomDropStar = (dropItem: any) => {
+  const randomDropStar = (dropItem: HTMLSpanElement | null) => {
     const starItem: HTMLSpanElement | null = dropItem;
     let dropInterval: any = setInterval;
-    if (starItem !== null) {
+    if (!!starItem) {
       clearInterval(dropInterval);
       dropInterval = setInterval(() => {
         try {
