@@ -5,7 +5,7 @@ import Main from "../components/main";
 const Index = () => {
   const maxStep: number = 1;
   const [isStep, setStep] = useState<number>(0);
-  const stepNext: () => void = () => {
+  const stepNext = () => {
     isStep === maxStep ? setStep(0) : setStep(isStep + 1);
   };
   return (

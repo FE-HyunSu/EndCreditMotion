@@ -3,7 +3,11 @@ import { MainBox } from "./style";
 import userListData from "../../data/userList.json";
 import randomComment from "../../data/randomComment.json";
 
-const Main = ({ stepNext }: any) => {
+interface stepNextType {
+  stepNext: () => void;
+}
+
+const Main = ({ stepNext }: stepNextType) => {
   const mainBoxRef = useRef<HTMLDivElement>(null);
   const userListRef = useRef<HTMLDivElement>(null);
   const bubbleGroup = useRef<HTMLDivElement>(null);

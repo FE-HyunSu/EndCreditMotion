@@ -1,7 +1,11 @@
 import React, { useRef, useEffect } from "react";
 import { IntroBox } from "./style";
 
-const Intro = ({ stepNext }: any) => {
+interface stepNextType {
+  stepNext: () => void;
+}
+
+const Intro = ({ stepNext }: stepNextType) => {
   const introRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     introRef.current?.classList.add("motion-on");
