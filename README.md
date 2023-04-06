@@ -22,3 +22,28 @@
 ### 🪬 Keyword.
 
 - `React` `Nextjs` `Typescript` `Recoil` `styled-components` `Animation`
+
+### 📺 Owner
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/fe-hyunsu">
+      <img src="https://avatars.githubusercontent.com/u/115357815?v=4" width="100px"  />
+      <br/>
+      Design 🖥
+      <br/>
+      김현수
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/fe-hyunsu">
+      <img src="https://avatars.githubusercontent.com/u/115357815?v=4" width="100px"  />
+      <br/>
+      FE 🖥
+      <br/>
+      김현수
+      </a>
+    </td>
+  </tr>
+</table>
