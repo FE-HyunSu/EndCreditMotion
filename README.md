@@ -31,7 +31,7 @@
       <a href="https://github.com/fe-hyunsu">
       <img src="https://avatars.githubusercontent.com/u/115357815?v=4" width="100px"  />
       <br/>
-      UI/UX 🖥
+      🎨 Design
       <br/>
       김현수
       </a>
@@ -40,7 +40,7 @@
       <a href="https://github.com/fe-hyunsu">
       <img src="https://avatars.githubusercontent.com/u/115357815?v=4" width="100px"  />
       <br/>
-      FE 🖥
+      🖥 FE
       <br/>
       김현수
       </a>
