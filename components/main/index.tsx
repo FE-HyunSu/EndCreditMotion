@@ -25,22 +25,21 @@ const Main = ({ stepNext }: stepNextType) => {
 
   const randomDropStar = (dropItem: HTMLSpanElement | null) => {
     const starItem: HTMLSpanElement | null = dropItem;
-    let dropInterval: any = setInterval;
-    if (!!starItem) {
-      clearInterval(dropInterval);
-      dropInterval = setInterval(() => {
-        try {
-          starItem.style.top = Math.floor(Math.random() * 100) + `%`;
-          starItem.style.left = Math.floor(Math.random() * 100) + `%`;
-          starItem.classList.add("active");
-          setTimeout(() => {
-            starItem.classList.remove("active");
-          }, 1500);
-        } catch {
-          clearInterval(dropInterval);
-        }
-      }, 2000);
-    }
+    let timeCount = 0;
+    const dropLoop = () => {
+      timeCount++;
+      if (!!starItem && timeCount > 120) {
+        starItem.style.top = Math.floor(Math.random() * 100) + `%`;
+        starItem.style.left = Math.floor(Math.random() * 100) + `%`;
+        starItem.classList.add("active");
+        timeCount = 0;
+        setTimeout(() => {
+          starItem.classList.remove("active");
+        }, 1500);
+      }
+      requestAnimationFrame(dropLoop);
+    };
+    requestAnimationFrame(dropLoop);
   };
 
   const bubbleItemEffect = (e: React.MouseEvent<Element, MouseEvent>) => {
