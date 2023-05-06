@@ -58,32 +58,27 @@ const Main = ({ stepNext }: stepNextType) => {
     if (userListRef.current) {
       userListRef.current.style.paddingTop = winHeight + `px`;
       let moving = 0;
-      let userListInterval: any = setInterval;
-      clearInterval(userListInterval);
-      userListInterval = setInterval(() => {
-        try {
-          if (userListRef.current) {
-            if (moving < userListOffHeight + winHeight) {
-              if (bubbleGroup.current)
-                bubbleGroup.current.style.top =
-                  100 - Math.ceil((moving * 100) / userListOffHeight) + "%";
-              userListRef.current.style.transform =
-                "translateY(-" + moving + "px)";
-              moving += 1.5;
-              if (
-                Math.ceil((moving * 100) / (userListOffHeight + winHeight)) > 98
-              ) {
-                mainBoxRef.current?.classList.add("list-end");
-              }
-            } else {
-              stepNext();
-              clearInterval(userListInterval);
+      const userListLoop = () => {
+        if (userListRef.current) {
+          if (moving < userListOffHeight + winHeight) {
+            if (bubbleGroup.current)
+              bubbleGroup.current.style.top =
+                100 - Math.ceil((moving * 100) / userListOffHeight) + "%";
+            userListRef.current.style.transform =
+              "translateY(-" + moving + "px)";
+            moving += 1.5;
+            if (
+              Math.ceil((moving * 100) / (userListOffHeight + winHeight)) > 98
+            ) {
+              mainBoxRef.current?.classList.add("list-end");
             }
+          } else {
+            stepNext();
           }
-        } catch {
-          clearInterval(userListInterval);
         }
-      }, 16);
+        requestAnimationFrame(userListLoop);
+      };
+      requestAnimationFrame(userListLoop);
     }
   };
 
