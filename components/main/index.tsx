@@ -44,9 +44,8 @@ const Main = ({ stepNext }: stepNextType) => {
 
   const bubbleItemEffect = (e: React.MouseEvent<Element, MouseEvent>) => {
     const target = e.target as Element;
-    let bubbleSetTime: any = setTimeout;
     target.classList.add("active");
-    bubbleSetTime = setTimeout(() => {
+    setTimeout(() => {
       target.classList.remove("active");
     }, 1000);
   };
