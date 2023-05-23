@@ -1,5 +1,9 @@
 import { DefaultTheme } from "styled-components";
 
+export const COLORS = {
+  WHITE: "#fff",
+};
+
 export const theme: DefaultTheme = {
   color: {
     purple: "#8661de",

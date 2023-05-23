@@ -1,4 +1,5 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes } from 'styled-components';
+import { COLORS } from '../../styles/theme';
 
 const motionAppear = keyframes`
   0% {transform: scale(1.5, 1.5); filter: blur(1rem); -webkit-filter: blur(1rem); opacity: 0;}
@@ -41,7 +42,7 @@ export const IntroBox = styled.section`
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    background-color: ${COLORS.WHITE};
     opacity: 1;
     z-index: 2;
     strong {
@@ -100,19 +101,15 @@ export const IntroBox = styled.section`
         width: 100%;
         height: 10rem;
         margin: auto;
-        background: url(/images/img_logo_154x42.png) no-repeat 50% 50% / 15.4rem
-          auto;
-        animation: ${motionAppear} 0.5s 3s 1 linear forwards,
-          ${motionAppearEnd} 0.5s 5s 1 linear forwards;
+        background: url(/images/img_logo_154x42.png) no-repeat 50% 50% / 15.4rem auto;
+        animation: ${motionAppear} 0.5s 3s 1 linear forwards, ${motionAppearEnd} 0.5s 5s 1 linear forwards;
         opacity: 0;
       }
       .slogan-01 {
-        animation: ${motionAppear} 0.5s 1 linear forwards,
-          ${motionMove1} 1s 1s 1 linear backwards;
+        animation: ${motionAppear} 0.5s 1 linear forwards, ${motionMove1} 1s 1s 1 linear backwards;
       }
       .slogan-02 {
-        animation: ${motionAppear} 0.5s 1s 1 linear forwards,
-          ${motionMove2} 1s 1s 1 linear backwards;
+        animation: ${motionAppear} 0.5s 1s 1 linear forwards, ${motionMove2} 1s 1s 1 linear backwards;
       }
       .slogan-03 {
         animation: ${motionAppear} 0.5s 1.5s 1 linear forwards;

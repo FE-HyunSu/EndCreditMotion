@@ -1,5 +1,5 @@
-import React, { useRef, useEffect } from "react";
-import { IntroBox } from "./style";
+import React, { useRef, useEffect } from 'react';
+import { IntroBox } from './style';
 
 interface stepNextType {
   stepNext: () => void;
@@ -8,7 +8,7 @@ interface stepNextType {
 const Intro = ({ stepNext }: stepNextType) => {
   const introRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
-    introRef.current?.classList.add("motion-on");
+    introRef.current?.classList.add('motion-on');
     let introTimeout = setTimeout(() => {
       stepNext();
       clearTimeout(introTimeout);

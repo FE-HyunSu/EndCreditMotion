@@ -1,4 +1,5 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes } from 'styled-components';
+import { COLORS } from '../../styles/theme';
 
 const motionStar = keyframes`
   0% {background-position-x: 0;}
@@ -42,7 +43,7 @@ export const MainBox = styled.section`
   &.list-end {
     .ynd-box {
       &:before {
-        content: "";
+        content: '';
         position: fixed;
         top: 0;
         left: 0;
@@ -55,7 +56,7 @@ export const MainBox = styled.section`
     }
   }
   &:before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -67,19 +68,18 @@ export const MainBox = styled.section`
     z-index: 2;
   }
   &.active:before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0) url(/images/bg_main_star_m.png) repeat 0
-      0 / 100% auto;
+    background: rgba(255, 255, 255, 0) url(/images/bg_main_star_m.png) repeat 0 0 / 100% auto;
     animation: ${motionStar} 40s linear infinite;
     opacity: 0.5;
   }
   &.active:after {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -185,7 +185,7 @@ export const MainBox = styled.section`
       }
       &.active {
         &:before {
-          content: "";
+          content: '';
           position: absolute;
           top: -1px;
           right: 0;
@@ -194,13 +194,13 @@ export const MainBox = styled.section`
           width: 100%;
           height: 100%;
           margin: auto;
-          border: 1px solid #fff;
+          border: 1px solid ${COLORS.WHITE};
           border-radius: 100%;
           animation: ${bubbleEffect02} 1s forwards;
           z-index: -1;
         }
         &:after {
-          content: "";
+          content: '';
           position: absolute;
           top: -1px;
           right: 0;
@@ -209,7 +209,7 @@ export const MainBox = styled.section`
           width: 100%;
           height: 100%;
           margin: auto;
-          border: 1px solid #fff;
+          border: 1px solid ${COLORS.WHITE};
           border-radius: 100%;
           animation: ${bubbleEffect01} 1s 0.2s forwards;
           z-index: -1;
@@ -223,7 +223,7 @@ export const MainBox = styled.section`
     top: 0;
     left: 0;
     width: 100%;
-    color: #fff;
+    color: ${COLORS.WHITE};
     .list-box {
       padding: 10rem 2rem;
       li {
@@ -244,7 +244,7 @@ export const MainBox = styled.section`
           &.leader {
             animation: textLight 7s linear infinite;
             &:before {
-              content: "*";
+              content: '*';
               position: absolute;
               top: -0.25em;
               left: -1em;
@@ -252,13 +252,13 @@ export const MainBox = styled.section`
               height: 1em;
               font-weight: 100;
               font-size: 2em;
-              color: #fff;
+              color: ${COLORS.WHITE};
               text-align: center;
               animation: motionRotate 2s reverse linear infinite;
               transform-origin: 50% 50%;
             }
             &:after {
-              content: "*";
+              content: '*';
               position: absolute;
               top: -0.25em;
               right: -1em;
@@ -266,7 +266,7 @@ export const MainBox = styled.section`
               height: 1em;
               font-weight: 100;
               font-size: 2em;
-              color: #fff;
+              color: ${COLORS.WHITE};
               text-align: center;
               animation: motionRotate 2s linear infinite;
               transform-origin: 50% 50%;
