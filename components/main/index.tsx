@@ -1,7 +1,7 @@
-import React, { useRef, useEffect } from "react";
-import { MainBox } from "./style";
-import userListData from "../../data/userList.json";
-import randomComment from "../../data/randomComment.json";
+import React, { useRef, useEffect } from 'react';
+import { MainBox } from './style';
+import userListData from '../../data/userList.json';
+import randomComment from '../../data/randomComment.json';
 
 interface stepNextType {
   stepNext: () => void;
@@ -31,10 +31,10 @@ const Main = ({ stepNext }: stepNextType) => {
       if (!!starItem && timeCount > 120) {
         starItem.style.top = Math.floor(Math.random() * 100) + `%`;
         starItem.style.left = Math.floor(Math.random() * 100) + `%`;
-        starItem.classList.add("active");
+        starItem.classList.add('active');
         timeCount = 0;
         setTimeout(() => {
-          starItem.classList.remove("active");
+          starItem.classList.remove('active');
         }, 1500);
       }
       requestAnimationFrame(dropLoop);
@@ -44,16 +44,22 @@ const Main = ({ stepNext }: stepNextType) => {
 
   const bubbleItemEffect = (e: React.MouseEvent<Element, MouseEvent>) => {
     const target = e.target as Element;
-    target.classList.add("active");
+    target.classList.add('active');
     setTimeout(() => {
-      target.classList.remove("active");
+      target.classList.remove('active');
     }, 1000);
   };
 
+  const maskingName = (str: string, n: number) => {
+    if (n < 1 || n > str.length) {
+      return str;
+    }
+    const replacedStr = str.substring(0, n - 1) + '*' + str.substring(n);
+    return replacedStr;
+  };
+
   const mainMotion = () => {
-    let userListOffHeight = userListRef.current
-      ? userListRef.current.offsetHeight
-      : 0;
+    let userListOffHeight = userListRef.current ? userListRef.current.offsetHeight : 0;
     if (userListRef.current) {
       userListRef.current.style.paddingTop = winHeight + `px`;
       let moving = 0;
@@ -61,15 +67,11 @@ const Main = ({ stepNext }: stepNextType) => {
         if (userListRef.current) {
           if (moving < userListOffHeight + winHeight) {
             if (bubbleGroup.current)
-              bubbleGroup.current.style.top =
-                100 - Math.ceil((moving * 100) / userListOffHeight) + "%";
-            userListRef.current.style.transform =
-              "translateY(-" + moving + "px)";
+              bubbleGroup.current.style.top = 100 - Math.ceil((moving * 100) / userListOffHeight) + '%';
+            userListRef.current.style.transform = 'translateY(-' + moving + 'px)';
             moving += 1.5;
-            if (
-              Math.ceil((moving * 100) / (userListOffHeight + winHeight)) > 98
-            ) {
-              mainBoxRef.current?.classList.add("list-end");
+            if (Math.ceil((moving * 100) / (userListOffHeight + winHeight)) > 98) {
+              mainBoxRef.current?.classList.add('list-end');
             }
           } else {
             stepNext();
@@ -82,7 +84,7 @@ const Main = ({ stepNext }: stepNextType) => {
   };
 
   useEffect(() => {
-    mainBoxRef.current?.classList.add("active");
+    mainBoxRef.current?.classList.add('active');
     randomDropStar(itemStarRef.current);
     setTimeout(() => {
       randomDropStar(itemStarRef2.current);
@@ -102,14 +104,14 @@ const Main = ({ stepNext }: stepNextType) => {
                 })
                 .map((item, idx) => (
                   <div key={idx} className="list-box">
-                    <strong>{item.groupName}</strong>
+                    <strong>{maskingName(item.groupName, 2)}</strong>
                     <ul>
                       {item.captain &&
                         item.captain.map((detailItem, detailIdx) => (
                           <li key={detailIdx}>
                             <strong>
-                              {detailItem.memberName}
-                              <span> / {item.groupName}</span>
+                              {maskingName(detailItem.memberName, 2)}
+                              <span> / {maskingName(item.groupName, 2)}</span>
                             </strong>
                             <p>
                               {detailItem.comment !== undefined
@@ -128,8 +130,8 @@ const Main = ({ stepNext }: stepNextType) => {
                           .map((userItem, userIdx) => (
                             <li key={userIdx}>
                               <strong>
-                                {userItem.memberName}
-                                <span> / {item.groupName}</span>
+                                {maskingName(userItem.memberName, 2)}
+                                <span> / {maskingName(item.groupName, 2)}</span>
                               </strong>
                               <p>
                                 {userItem.comment !== undefined
@@ -158,8 +160,7 @@ const Main = ({ stepNext }: stepNextType) => {
                     type="button"
                     className={`bubble-item-0` + (idx + 1)}
                     style={{ backgroundImage: `url(${item})` }}
-                    onClick={(e) => bubbleItemEffect(e)}
-                  >
+                    onClick={(e) => bubbleItemEffect(e)}>
                     item{idx + 1}
                   </button>
                 ))}
